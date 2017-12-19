@@ -1,13 +1,46 @@
-#React-express
+# Appeal It
 
-A basic layout using node to create an es6 React/Webpack setup. Has an express server.
+Chatbot for appealing parking tickets in New Zealand.
 
-```npm start``` to run the express server on localhost:3000.
+## Can I Appeal It?
 
-```npm test``` to run the Tape/Enzyme tests, that also uses ```babel-tape-runner``` for es6.
+Once finished this project will be available online.
+Please be patient while this is being built.
 
-```npm run build``` to build the bundle.js that lies in /public, using webpack.
+### Get running locally
 
-```npm run build:watch``` to watch and rebuild on file changes.
+Before running project for the first time locally, you will need to install project dependencies.
 
-```npm run dev``` to serve a hot-reloading webpack dev server on port 8080.
+Make sure you have the latest version of npm then run: `npm install`.
+
+
+### Commands
+
+`npm start` to run the express server on localhost:3000.
+
+`npm test` to run the Tape/Enzyme tests, that also uses `babel-tape-runner` for es6.
+
+`npm run build` to build the bundle.js that lies in /public, using webpack.
+
+`npm run build:watch` to watch and rebuild on file changes.
+
+`npm run dev` to serve a hot-reloading webpack dev server on port 8080.
+
+
+## Authors
+
+* **Ollie Bannister** - *Code wrangler* - [Olwiba](https://github.com/olwiba)
+* **Sean Stack** - *Mind wizard*
+
+## To be added
+
+* Built With section
+* Versioning
+* Contribution
+* Deployment
+* Testing
+* Website
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
