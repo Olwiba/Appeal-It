@@ -1,4 +1,4 @@
-<img src="https://github.com/Olwiba/Appeal-It/blob/master/client/assets/images/friendly-bot.png" alt="Beep boop" style="width: 150px;"/>
+<img src="https://github.com/Olwiba/Appeal-It/blob/master/client/assets/images/friendly-bot.png" alt="Beep boop" style="max-width: 150px;"/>
 # Appeal It
 
 Chatbot for appealing parking tickets in New Zealand.
