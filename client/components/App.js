@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import ChatBot from 'react-simple-chatbot';
 
 class App extends Component {
   static propTypes = {
@@ -14,7 +15,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>App</div>
+      <ChatBot
+        steps={[
+          {
+            id: 'hello-world',
+            message: 'Hello World!',
+            end: true,
+          },
+        ]}
+      />
     );
   }
 }
