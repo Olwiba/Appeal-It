@@ -1,4 +1,4 @@
-![Beep boop](https://github.com/Olwiba/Appeal-It/blob/master/client/assets/images/friendly-bot.png =150x)
+<img src="/blob/master/client/assets/images/friendly-bot.png" alt="Beep boop" style="width: 150px;"/>
 # Appeal It
 
 Chatbot for appealing parking tickets in New Zealand.
