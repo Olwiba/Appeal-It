@@ -1,3 +1,4 @@
+![Beep boop](https://github.com/Olwiba/Appeal-It/blob/master/client/assets/images/friendly-bot.png)
 # Appeal It
 
 Chatbot for appealing parking tickets in New Zealand.
