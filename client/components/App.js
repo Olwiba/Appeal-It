@@ -1,6 +1,19 @@
 import React, { Component, PropTypes } from 'react';
 import ChatBot from 'react-simple-chatbot';
 
+const steps = [
+  {
+    id: '0',
+    message: 'Welcome to react chatbot!',
+    trigger: '1'
+  },
+  {
+    id: '1',
+    message: 'Bye!',
+    end: true
+  },
+];
+
 class App extends Component {
   static propTypes = {
     //propTypes go here
@@ -16,13 +29,7 @@ class App extends Component {
   render() {
     return (
       <ChatBot
-        steps={[
-          {
-            id: 'hello-world',
-            message: 'Hello World!',
-            end: true,
-          },
-        ]}
+        steps={steps}
       />
     );
   }
