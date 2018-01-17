@@ -1,11 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 import ChatBot from 'react-simple-chatbot';
 
+// todo : remove unneeded packages after refactor
+
 const steps = [
   {
     id: '0',
-    message: 'Welcome to react chatbot!',
-    trigger: '1'
+    trigger: '1',
+    message: 'Welcome to react test chatbot!'
   },
   {
     id: '1',
