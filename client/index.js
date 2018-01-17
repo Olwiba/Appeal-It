@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import Questionnaire from './components/Questionnaire';
 
 const reactRoot = document.getElementById('app');
 
 ReactDOM.render(
-  <App />,
+  <Questionnaire />,
   reactRoot
 );
