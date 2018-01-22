@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-var StepTwo = React.createClass({
+var StepSix = React.createClass({
   render: function() {
     return ( 
     <div>
@@ -14,26 +14,10 @@ var StepTwo = React.createClass({
         ["overstay", this.props.fieldValues.overstay],
         ["noDisplay", this.props.fieldValues.noDisplay]
       ])}
-      <label>Registration:</label> 
-      <input type="text"
-             ref="registration"
-             defaultValue={ this.props.fieldValues.registration } />
 
-      <button onClick={ this.saveAndContinue }>Save and Continue</button></div>
+      <label>Questionnaire complete!</label></div>
     )
-  },
-
-  saveAndContinue: function(e) {
-    e.preventDefault()
-
-    // Get values via this.refs
-    var data = {
-      registration : this.refs.registration.value
-    }
-
-    this.props.saveValues(data)
-    this.props.nextStep()
   }
 })
 
-module.exports = StepTwo
+module.exports = StepSix

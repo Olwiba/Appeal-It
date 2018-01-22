@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-var StepOne = React.createClass({
+var StepThree = React.createClass({
   render: function() {
     return ( 
     <div>
@@ -14,15 +14,15 @@ var StepOne = React.createClass({
         ["overstay", this.props.fieldValues.overstay],
         ["noDisplay", this.props.fieldValues.noDisplay]
       ])}
-      <label>First name:</label> 
+      <label>Ticket Issuer:</label> 
       <input type="text"
-             ref="firstName"
-             defaultValue={ this.props.fieldValues.firstName } />
+             ref="ticketIssuer"
+             defaultValue={ this.props.fieldValues.ticketIssuer } />
 
-      <label>Last name:</label>
+      <label>Ticket Number:</label> 
       <input type="text"
-             ref="lastName"
-             defaultValue={ this.props.fieldValues.lastName } />
+             ref="ticketNumber"
+             defaultValue={ this.props.fieldValues.ticketNumber } />
 
       <button onClick={ this.saveAndContinue }>Save and Continue</button></div>
     )
@@ -33,8 +33,8 @@ var StepOne = React.createClass({
 
     // Get values via this.refs
     var data = {
-      firstName : this.refs.firstName.value,
-      lastName : this.refs.lastName.value
+      ticketIssuer : this.refs.ticketIssuer.value,
+      ticketNumber : this.refs.ticketNumber.value
     }
 
     this.props.saveValues(data)
@@ -42,4 +42,4 @@ var StepOne = React.createClass({
   }
 })
 
-module.exports = StepOne
+module.exports = StepThree
