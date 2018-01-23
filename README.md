@@ -1,4 +1,4 @@
-![](https://github.com/Olwiba/Appeal-It/blob/master/client/assets/images/friendly-bot.png)
+![](https://github.com/Olwiba/Appeal-It/blob/master/public/assets/images/friendly-bot.png)
 
 # Appeal It
 

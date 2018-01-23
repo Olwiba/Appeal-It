@@ -14,12 +14,15 @@ var StepTwo = React.createClass({
         ["overstay", this.props.fieldValues.overstay],
         ["noDisplay", this.props.fieldValues.noDisplay]
       ])}
-      <label>Registration:</label> 
+      <label for="registration" class="sr-only">Registration plate</label> 
       <input type="text"
+             id="registration"
              ref="registration"
+             className="form-control"
+             placeholder="Registration plate"
              defaultValue={ this.props.fieldValues.registration } />
 
-      <button onClick={ this.saveAndContinue }>Save and Continue</button></div>
+      <button className="btn btn-lg btn-primary btn-block" onClick={ this.saveAndContinue }>Save and Continue</button></div>
     )
   },
 

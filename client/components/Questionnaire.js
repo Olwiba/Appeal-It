@@ -2,6 +2,8 @@ import React, {
 	Component,
 	PropTypes
 } from 'react';
+import GetStarted from './Steps/GetStarted';
+import Intro from './Steps/Intro';
 import StepOne from './Steps/StepOne';
 import StepTwo from './Steps/StepTwo';
 import StepThree from './Steps/StepThree';
@@ -52,6 +54,22 @@ var Questionnaire = React.createClass({
 	render: function () {
 		switch (this.state.step) {
 			case 1:
+			return <GetStarted fieldValues = {
+				fieldValues
+			}
+			nextStep = {
+				this.nextStep
+			}
+			/>
+			case 2:
+			return <Intro fieldValues = {
+				fieldValues
+			}
+			nextStep = {
+				this.nextStep
+			}
+			/>
+			case 3:
 				return <StepOne fieldValues = {
 					fieldValues
 				}
@@ -62,7 +80,7 @@ var Questionnaire = React.createClass({
 					this.saveValues
 				}
 				/>
-			case 2:
+			case 4:
 				return <StepTwo fieldValues = {
 					fieldValues
 				}
@@ -76,7 +94,7 @@ var Questionnaire = React.createClass({
 					this.saveValues
 				}
 				/>
-			case 3:
+			case 5:
 				return <StepThree fieldValues = {
 					fieldValues
 				}
@@ -90,7 +108,7 @@ var Questionnaire = React.createClass({
 					this.saveValues
 				}
 				/>
-			case 4:
+			case 6:
 				return <StepFour fieldValues = {
 					fieldValues
 				}
@@ -104,7 +122,7 @@ var Questionnaire = React.createClass({
 					this.saveValues
 				}
 				/>
-			case 5:
+			case 7:
 				return <StepFive fieldValues = {
 					fieldValues
 				}
@@ -118,7 +136,7 @@ var Questionnaire = React.createClass({
 					this.saveValues
 				}
 				/>
-			case 6:
+			case 8:
 				return <Completed fieldValues = {
 					fieldValues
 				}
